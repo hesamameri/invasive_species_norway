@@ -1,0 +1,48 @@
+# --- Python / env ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.ipynb_checkpoints/
+venv/
+env/
+.venv/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- build / run artefacts ---
+*.log
+*.aux
+*.out
+*.zip
+
+# --- raw WorldClim current climate (627 MB zip + 665 MB extracted) ---
+# regenerate via data_prep/prepare_env_layers.py
+data/wc2.1_2.5m_bio/
+data/wc2.1_2.5m_elev/
+
+# --- raw CMIP6 future climate (12 × ~440 MB files, ~5.3 GB total) ---
+# regenerate via data_prep/future_projections.py
+data/future/wc2.1_*.tif
+data/future/*/*.tif
+!data/future/ensemble_projections/*.tif
+
+# --- intermediate per-GCM projection rasters ---
+# regenerate via data_prep/ensemble_future.py
+data/future/projections/
+
+# --- raw GBIF downloads (61 MB gpkg + 43 MB CSV, over GitHub's 50 MB warn threshold) ---
+# regenerate via data_prep/download_clean_gbif.py
+data/lupinus_polyphyllus_no_clean.gpkg
+data/lupinus_polyphyllus_no_clean.csv
+
+# --- fold-trained MaxEnt binaries (small but not needed — regenerate via pipeline) ---
+data/model/*.ela
+
+# --- draft blog (personal content, not part of repo) ---
+blog/
+

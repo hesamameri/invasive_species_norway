@@ -1,0 +1,140 @@
+{
+  "seed": 42,
+  "n_folds": 4,
+  "threshold_bin": 0.6,
+  "maxent_features": [
+    "linear",
+    "quadratic"
+  ],
+  "maxent_beta": 2.0,
+  "predictors": [
+    "bio_10",
+    "bio_11",
+    "bio_15",
+    "bio_18",
+    "bio_19",
+    "bio_2",
+    "bio_3",
+    "bio_8",
+    "slope",
+    "soil_ph"
+  ],
+  "auc_weights": {
+    "MaxEnt": 0.7034239593422976,
+    "GLM": 0.7005008027211876,
+    "RF": 0.6511769419972866,
+    "GBM": 0.6328730238624319
+  },
+  "cv_summary": [
+    {
+      "algorithm": "MaxEnt",
+      "mean_auc": 0.7034239593422976,
+      "sd_auc": 0.030261631789848104,
+      "mean_boyce": 0.9363636363636363,
+      "sd_boyce": 0.10303030303030303
+    },
+    {
+      "algorithm": "GLM",
+      "mean_auc": 0.7005008027211876,
+      "sd_auc": 0.022499830166454945,
+      "mean_boyce": 0.9818181818181817,
+      "sd_boyce": 0.02099455524325911
+    },
+    {
+      "algorithm": "RF",
+      "mean_auc": 0.6511769419972866,
+      "sd_auc": 0.04411859847599371,
+      "mean_boyce": 0.9333333333333332,
+      "sd_boyce": 0.0854237354014787
+    },
+    {
+      "algorithm": "GBM",
+      "mean_auc": 0.6328730238624319,
+      "sd_auc": 0.03945705519887243,
+      "mean_boyce": 0.903030303030303,
+      "sd_boyce": 0.05510376443226607
+    }
+  ],
+  "top_predictors_by_permutation": [
+    {
+      "variable": "bio_10",
+      "label": "T warmest quarter",
+      "mean_auc_drop": 0.15289485472312705,
+      "sd_auc_drop": 0.0033305892717408283
+    },
+    {
+      "variable": "bio_18",
+      "label": "Precip. warmest quarter",
+      "mean_auc_drop": 0.05069169315960913,
+      "sd_auc_drop": 0.001663237354471686
+    },
+    {
+      "variable": "bio_3",
+      "label": "Isothermality",
+      "mean_auc_drop": 0.042125532247556996,
+      "sd_auc_drop": 0.0014571781001850462
+    },
+    {
+      "variable": "bio_19",
+      "label": "Precip. coldest quarter",
+      "mean_auc_drop": 0.022033449511400672,
+      "sd_auc_drop": 0.002031665368309196
+    },
+    {
+      "variable": "bio_8",
+      "label": "T wettest quarter",
+      "mean_auc_drop": 0.019988538762215003,
+      "sd_auc_drop": 0.0009059894675841959
+    },
+    {
+      "variable": "bio_2",
+      "label": "Mean diurnal range",
+      "mean_auc_drop": 0.01846098827361564,
+      "sd_auc_drop": 0.0014702351479287592
+    }
+  ],
+  "gain_loss_summary": [
+    {
+      "ssp": "ssp245",
+      "period": "2041-2060",
+      "gain_mean": 24.81462403337403,
+      "gain_sd": 3.7673099496850657,
+      "loss_mean": 5.233611874236874,
+      "loss_sd": 3.5053416754763163,
+      "stable_suit": 13.783005189255192,
+      "stable_unsuit": 56.1687589031339
+    },
+    {
+      "ssp": "ssp245",
+      "period": "2061-2080",
+      "gain_mean": 25.514950905575905,
+      "gain_sd": 4.854803393202621,
+      "loss_mean": 8.68945868945869,
+      "loss_sd": 4.498170118366185,
+      "stable_suit": 10.327158374033374,
+      "stable_unsuit": 55.46843203093203
+    },
+    {
+      "ssp": "ssp585",
+      "period": "2041-2060",
+      "gain_mean": 24.181865588115585,
+      "gain_sd": 2.3538194655297064,
+      "loss_mean": 7.338567104192105,
+      "loss_sd": 4.9369277317210205,
+      "stable_suit": 11.67804995929996,
+      "stable_unsuit": 56.80151734839236
+    },
+    {
+      "ssp": "ssp585",
+      "period": "2061-2080",
+      "gain_mean": 26.387140059015064,
+      "gain_sd": 8.483730420293702,
+      "loss_mean": 12.482829670329672,
+      "loss_sd": 5.031283933900233,
+      "stable_suit": 6.533787393162393,
+      "stable_unsuit": 54.59624287749288
+    }
+  ],
+  "mean_inter_algorithm_sd": 0.20833203220000782,
+  "pct_pixels_mess_negative_current": 39.810840201465204
+}

@@ -1,0 +1,12 @@
+# Selected predictors after collinearity filtering (expanded set)
+# Threshold: |r| > 0.7
+bio_10
+bio_11
+bio_15
+bio_18
+bio_19
+bio_2
+bio_3
+bio_8
+slope
+soil_ph

@@ -1,0 +1,15 @@
+pandas
+geopandas
+pygbif
+shapely
+matplotlib  # optional, for plotting
+rasterio
+rioxarray
+xarray
+scikit-learn
+pyproj
+requests
+seaborn
+
+# later you might add:
+# maxentpy or pysdm  (for modelling)
